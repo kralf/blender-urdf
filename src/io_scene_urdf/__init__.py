@@ -25,8 +25,8 @@ bl_info = {
   "description": "Import-Export Unified Robot Description Format (URDF)",
   "warning": "",
   "wiki_url": "",
-  "tracker_url": "",
-  "support": "OFFICIAL",
+  "tracker_url": "http://github.com/kralf/blender-urdf",
+  "support": "COMMUNITY",
   "category": "Import-Export"
 }
 
@@ -65,7 +65,7 @@ class ImportURDF(bpy.types.Operator, ImportHelper):
   
 
 class ImportURDFXacro(bpy.types.Operator, ImportHelper):
-  bl_idname = "import_scene.urdf.xacro"
+  bl_idname = "import_scene_urdf.xacro"
   bl_label = "Import URDF/Xacro"
   bl_options = {"PRESET", "UNDO"}
 
@@ -96,7 +96,7 @@ class ExportURDF(bpy.types.Operator, ExportHelper):
   
 
 class ExportURDFXacro(bpy.types.Operator, ExportHelper):
-  bl_idname = "export_scene.urdf.xacro"
+  bl_idname = "export_scene_urdf.xacro"
   bl_label = "Export URDF/Xacro"
   bl_options = {"PRESET", "UNDO"}
 
@@ -121,7 +121,7 @@ def menu_func_import(self, context):
 def menu_func_export(self, context):
   self.layout.operator(ExportURDF.bl_idname,
     text="Unified Robot Description Format (.urdf)")
-  self.layout.operator(ExportURDFXacrp.bl_idname,
+  self.layout.operator(ExportURDFXacro.bl_idname,
     text="Unified Robot Description Format/Xacro (.urdf.xacro)")
 
 

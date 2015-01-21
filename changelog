@@ -1,3 +1,10 @@
+blender-urdf (0.1-2) unstable; urgency=low
+
+  * Cleanups in __init__.py
+  * Added .gitignore
+
+ -- Ralf Kaestner <ralf.kaestner@gmail.com>  Wed, 21 Jan 2015 15:36:00 +0200
+ 
 blender-urdf (0.1-1) unstable; urgency=low
 
   * Initial commit
